@@ -27,9 +27,10 @@ The SyncTime executable is a standalone program designed to disable and then re-
 
 El ejecutable SyncTime es un programa independiente diseñado para desactivar y luego reactivar el servicio de sincronización de la hora en Windows, ya que Windows no sincroniza la hora automáticamente al iniciar, y se tiene la hora sin sincronizar hasta que manualmente desactives y actives esta opción.
 
-1. **Desactivar la Sincronización de la Hora**: El programa utiliza el comando `w32tm` para desactivar el servicio de sincronización de la hora. Limpia la lista de pares manuales y detiene el servicio `w32time`.
-2. **Esperar**: El programa se pausa por un breve período (2 segundos) para permitir cualquier cambio o mantenimiento necesario.
-3. **Activar la Sincronización de la Hora**: Luego, el programa vuelve a habilitar el servicio de sincronización de la hora resincronizando la hora y reiniciando el servicio `w32time`.
+## Cómo Funciona
+Desactivar la Sincronización de Hora: El programa utiliza el comando w32tm para desactivar el servicio de sincronización de hora. Limpia la lista de pares manuales y detiene el servicio w32time.
+Esperar: El programa hace una pausa por un corto período (2 segundos) para permitir cualquier cambio o mantenimiento necesario.
+Habilitar la Sincronización de Hora: El programa luego vuelve a habilitar el servicio de sincronización de hora resincronizando la hora y reiniciando el servicio w32time.
 
 ## Requisitos
 
